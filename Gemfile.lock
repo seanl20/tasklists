@@ -206,6 +206,11 @@ GEM
       prism (>= 0.25.0)
       sorbet-runtime (>= 0.5.9914)
       zeitwerk (>= 2.6.1)
+    packwerk-extensions (0.3.0)
+      packwerk (>= 2.2.1)
+      railties (>= 6.0.0)
+      sorbet-runtime
+      zeitwerk
     parallel (1.26.3)
     parse_packwerk (0.26.0)
       bigdecimal
@@ -389,8 +394,9 @@ DEPENDENCIES
   hoardable
   importmap-rails
   jbuilder
-  packs-rails (~> 0.0.5)
+  packs-rails
   packwerk
+  packwerk-extensions
   pg (~> 1.1)
   puma (>= 5.0)
   rails (~> 7.2.1)

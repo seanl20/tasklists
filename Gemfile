@@ -36,7 +36,9 @@ gem "bootsnap", require: false
 gem "rubocop", require: false
 gem "hoardable"
 gem "devise", "~> 4.9"
-gem 'packwerk'
+gem "packs-rails"
+gem "packwerk"
+gem "packwerk-extensions"
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
@@ -60,5 +62,3 @@ group :test do
   gem "rspec-rails"
   gem "rspec"
 end
-
-gem "packs-rails", "~> 0.0.5"
