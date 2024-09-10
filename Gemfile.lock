@@ -88,6 +88,12 @@ GEM
     brakeman (6.2.1)
       racc
     builder (3.3.0)
+    code_ownership (1.37.0)
+      code_teams (~> 1.0)
+      packs-specification
+      sorbet-runtime (>= 0.5.11249)
+    code_teams (1.0.2)
+      sorbet-runtime
     concurrent-ruby (1.3.4)
     connection_pool (2.4.1)
     constant_resolver (0.2.0)
@@ -173,6 +179,22 @@ GEM
     nokogiri (1.16.7-x86_64-linux)
       racc (~> 1.4)
     orm_adapter (0.5.0)
+    packs (0.0.44)
+      bigdecimal
+      code_ownership (>= 1.33.0)
+      packs-specification
+      packwerk
+      parse_packwerk (>= 0.25.0)
+      rainbow
+      sorbet-runtime
+      thor
+      tty-prompt
+    packs-rails (0.0.5)
+      activesupport
+      packs
+      railties
+    packs-specification (0.0.10)
+      sorbet-runtime
     packwerk (3.2.1)
       activesupport (>= 6.0)
       ast
@@ -185,9 +207,14 @@ GEM
       sorbet-runtime (>= 0.5.9914)
       zeitwerk (>= 2.6.1)
     parallel (1.26.3)
+    parse_packwerk (0.26.0)
+      bigdecimal
+      sorbet-runtime
     parser (3.3.5.0)
       ast (~> 2.4.1)
       racc
+    pastel (0.8.0)
+      tty-color (~> 0.5)
     pg (1.5.8)
     prism (1.0.0)
     psych (5.1.2)
@@ -313,6 +340,16 @@ GEM
     stringio (3.1.1)
     thor (1.3.2)
     timeout (0.4.1)
+    tty-color (0.6.0)
+    tty-cursor (0.7.1)
+    tty-prompt (0.23.1)
+      pastel (~> 0.8)
+      tty-reader (~> 0.8)
+    tty-reader (0.9.0)
+      tty-cursor (~> 0.7)
+      tty-screen (~> 0.8)
+      wisper (~> 2.0)
+    tty-screen (0.8.2)
     turbo-rails (2.0.6)
       actionpack (>= 6.0.0)
       activejob (>= 6.0.0)
@@ -332,6 +369,7 @@ GEM
     websocket-driver (0.7.6)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
+    wisper (2.0.1)
     zeitwerk (2.6.18)
 
 PLATFORMS
@@ -351,6 +389,7 @@ DEPENDENCIES
   hoardable
   importmap-rails
   jbuilder
+  packs-rails (~> 0.0.5)
   packwerk
   pg (~> 1.1)
   puma (>= 5.0)

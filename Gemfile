@@ -60,3 +60,5 @@ group :test do
   gem "rspec-rails"
   gem "rspec"
 end
+
+gem "packs-rails", "~> 0.0.5"
